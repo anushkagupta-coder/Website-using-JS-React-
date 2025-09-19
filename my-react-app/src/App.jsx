@@ -1,14 +1,16 @@
-/*protypes=a mechanism that ensures 
+/*1.protypes=a mechanism that ensures 
  that passed value is of correct data type
-css styles
+2.css styles
 inline 
 external
 modules
-click event=an interaction when a user clicks a specific element 
+3.click event=an interaction when a user clicks a specific element 
 we can respond to clicks by passing a callback to onclick event handler
-React hook=special function that allows functional components
+4.React hook=special function that allows functional components
 to use react features without writing class components  (react v16.8)
-(useState,useEffect,useContext,useReducer,useCallback)*/
+(useState,useEffect,useContext,useReducer,useCallback)
+5.useState() = A react hook that allowsthe creation of a staeful variable and a steer funtion
+to update its value in virtual DOM.[NAME,SETNAME]*/
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
