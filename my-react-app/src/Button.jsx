@@ -1,4 +1,6 @@
 function Button(){
+
+    const handleClick =(e)=> e.target.textContent="ouchh!!!"
     let count=0;
     const handleClick=(name)=> {
         if(count<3){
@@ -14,7 +16,7 @@ function Button(){
 
     //const handleClick2=(name)=> console.log( `${name} stop clicking me` );
     return(
-        <button onClick={()=> handleClick("anushka")}>click me </button>
+        <button onClick={(e)=> handleClick(e)}>click me </button>
     );
 }
 export default Button
