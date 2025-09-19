@@ -15,7 +15,7 @@ function App() {
         <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
         <Student name="ANUSHKA" age={10} isStudent={false}/>
-        
+        <Button/>
         
       </>
     );
