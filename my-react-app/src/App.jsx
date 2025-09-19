@@ -4,6 +4,7 @@
 //inline 
 //external
 //modules
+/*click event=an interaction when a user clicks a specific element 
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
