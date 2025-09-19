@@ -1,3 +1,22 @@
+.welcome-message{
+  font-size: 1.9em;
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  margin: 0px;
+
+}
+.login-prompt{
+  font-size: 1.9em;
+  background-color: red;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  margin: 0px;
+
+}
+
 .student{
   font-family: Arial, sans-serif;
   font-size: 2em;

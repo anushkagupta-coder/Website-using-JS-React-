@@ -9,11 +9,13 @@ import Footer from './Footer.jsx'
 import Card from './Card.jsx'
 import Button from './Button.jsx'
 import Student from './Student.jsx'
+import UserGreeting from './UserGreeting.jsx'
 function App() {
     return(
       <>
         <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
+        <UserGreeting isLoggedIn={false} username="ANUSHKA"/>
         <Student name="ANUSHKA" age={10} isStudent={false}/>
         <Button/>
         
