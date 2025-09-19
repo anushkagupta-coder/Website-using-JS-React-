@@ -4,10 +4,10 @@ import Food from './Food.jsx'
 function App() {
     return(
       <>
+        <Footer/>
         <Header/>
         <Food/>
         <Food/>
-        <Footer/>
 
       </>
     );
