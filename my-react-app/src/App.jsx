@@ -1,11 +1,14 @@
-//protypes=a mechanism that ensures 
-// that passed value is of correct data type
-//css styles
-//inline 
-//external
-//modules
-/*click event=an interaction when a user clicks a specific element 
-we can respond to clicks by passing a callback to onclick event handler */
+/*protypes=a mechanism that ensures 
+ that passed value is of correct data type
+css styles
+inline 
+external
+modules
+click event=an interaction when a user clicks a specific element 
+we can respond to clicks by passing a callback to onclick event handler
+React hook=special function that allows functional components
+to use react features without writing class components  (react v16.8)
+(useState,useEffect,useContext,useReducer,useCallback)*/
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
@@ -13,6 +16,7 @@ import Button from './Button.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
+import { useCallback, useContext, useEffect, useReducer } from 'react'
 
 function App() {
 
