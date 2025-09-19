@@ -33,6 +33,7 @@ function App() {
         <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
         <Button/>
+        <Footer/>
         <List items={fruits} category="Fruits"/>
         <List items={vegetables} category ="Vegetables"/>
         <UserGreeting isLoggedIn={true} username="anushka"/>
