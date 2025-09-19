@@ -3,4 +3,4 @@ function Button(){
         <button className="button">click me</button>
     );
 }
-export defualt Button
+export default Button
