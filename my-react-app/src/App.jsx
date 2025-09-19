@@ -1,3 +1,9 @@
+//protypes=a mechanism that ensures 
+// that passed value is of correct data type
+//css styles
+//inline 
+//external
+//modules
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
@@ -6,8 +12,10 @@ import Student from './Student.jsx'
 function App() {
     return(
       <>
-        <Student name="spongebob" age={21} isstudent={true}/>
+        <Student name="spongebob" age={21} isStudent={true}/>
         <Card/>
+        <Student name="shubhi" age={10} isStudent={false}/>
+        
         
       </>
     );

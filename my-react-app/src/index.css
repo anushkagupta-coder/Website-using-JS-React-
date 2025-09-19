@@ -1,3 +1,13 @@
+.student{
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  padding: 1-px;
+  border: 1px solid rgb(55, 54, 54);
+}
+.student p{
+  margin:0;
+}
+
 .Button{
   background: black;
   color: white;
