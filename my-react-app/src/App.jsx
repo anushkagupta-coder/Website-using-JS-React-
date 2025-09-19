@@ -12,9 +12,9 @@ import Student from './Student.jsx'
 function App() {
     return(
       <>
-        <Student name="spongebob" age={21} isStudent={true}/>
+        <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
-        <Student name="shubhi" age={10} isStudent={false}/>
+        <Student name="ANUSHKA" age={10} isStudent={false}/>
         
         
       </>
