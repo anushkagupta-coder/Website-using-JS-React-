@@ -13,7 +13,7 @@ function Header(){
             </nav>
             <hr></hr>
         </header>
-    )
+    );
 
 }
 
