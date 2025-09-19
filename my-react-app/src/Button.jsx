@@ -1,6 +1,6 @@
 function Button(){
     return(
-        <button className="button">click me</button>
+        <button onClick={}>click me </button>
     );
 }
 export default Button
