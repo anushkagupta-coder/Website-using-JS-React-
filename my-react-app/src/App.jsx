@@ -32,12 +32,13 @@ function App() {
       <>
         <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
+        <Button/>
         <List items={fruits} category="Fruits"/>
         <List items={vegetables} category ="Vegetables"/>
         <UserGreeting isLoggedIn={true} username="anushka"/>
         <UserGreeting />
         <Student name="ANUSHKA" age={10} isStudent={false}/>
-        <Button/>
+        
         
       </>
     );
