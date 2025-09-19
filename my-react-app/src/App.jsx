@@ -4,11 +4,9 @@ import Card from './Card.jsx'
 function App() {
     return(
       <>
-        <Card></Card>
-        <Footer/>
-        <Header/>
-        <Food/>
-        <Food/>
+        <card/>;
+        <card/>;
+        <card/>;
 
       </>
     );
