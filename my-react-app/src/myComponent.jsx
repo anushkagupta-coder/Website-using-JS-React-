@@ -1,15 +1,17 @@
 import React, {useState}from 'react';
 
-function myComponent(){
-    let [name, setName] = useState();
+function MyComponent(){
+
+    const [name, setName] = useState();
+
     const updateName=() => {
-        name="hermoine";
-        console.log(name);
+        setName("hermoine")
     }
+
     return(<div>
         <p>Name: {name}</p>
         <button onClick={updateName}>Set Name</button>
     </div>)
 
 }
-export default myComponent
+export default MyComponent

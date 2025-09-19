@@ -18,7 +18,7 @@ import Button from './Button.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
-import myComponent from './myComponent.jsx'
+import MyComponent from './myComponent.jsx'
 import { useCallback, useContext, useEffect, useReducer } from 'react'
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
         <Card/>
         <Button/>
         <Footer/>
-        <myComponent/>
+        <MyComponent/>
         <List items={fruits} category="Fruits"/>
         <List items={vegetables} category ="Vegetables"/>
         <UserGreeting isLoggedIn={true} username="anushka"/>
