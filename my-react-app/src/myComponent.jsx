@@ -4,7 +4,7 @@ function MyComponent(){
 
     const [name, setName] = useState("ANUSHKA");
     const[age,setAge]=useState(0);
-    const [isEmployed,setIsEmployed]= usestate(false);
+    const [isEmployed,setIsEmployed]= useState(false);
 
     const updateName=() => {
         setName("HERMOINE")
