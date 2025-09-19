@@ -18,7 +18,7 @@ import Button from './Button.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
-import MyComponent from './myComponent.jsx'
+import MyComponent from './MyComponent.jsx'
 import { useCallback, useContext, useEffect, useReducer } from 'react'
 
 function App() {
