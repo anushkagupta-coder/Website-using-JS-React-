@@ -1,16 +1,10 @@
 function List(props){
-
-    const category = props.category;
+    const category= props.category;
     const itemList = props.items;
 
-    const listItems=itemList.map(item => <li key={item.id}>
-                                            {item.name}:&nbsp;
-                                            <b>{item.calories}</b></li>)
-
-    /*const fruits=[{id : 1,name:"apple",calories:95},
-                {id : 2,name:"orange",calories:45},
-                {id : 3,name:"banana",calories:105},
-                {id : 4,name:"coconut",calories:37}];*/
+    const listItems = itemList.map(item => <li key={item.name}>
+                      {item.name}: &nbsp;
+                        <b>{item.calories}</b></li>);
 
     /*fruits.sort((a,b) => a.name.localeCompare(b.name)) ;//alphabetical order
     //replace and b for reverse order;
@@ -25,7 +19,11 @@ function List(props){
 
     //const listItems = fruits.map(fruit => <li key={fruit.name}>
       //                  {fruit.name}: &nbsp;
-             //           <b>{fruit.calories}</b></li>);
-    return (<ol>{listItems}</ol>);*/
+             //           <b>{fruit.calories}</b></li>);*/
+    return (<>
+            <h3 className="list-category">{category}</h3>
+            <ol className="list-items">{listItems}
+            </ol>
+            </>);
 }
 export default List

@@ -14,23 +14,26 @@ import List from './List.jsx'
 
 function App() {
 
-    const fruits=[{id : 1,name:"apple",calories:95},
+
+  const fruits=[{id : 1,name:"apple",calories:95},
                 {id : 2,name:"orange",calories:45},
                 {id : 3,name:"banana",calories:105},
                 {id : 4,name:"coconut",calories:37}];
 
-    const vegetables=[{id : 6,name:"apple",calories:95},
-                {id : 7,name:"orange",calories:45},
-                {id : 8,name:"banana",calories:105},
-                {id : 9,name:"coconut",calories:37}];
+  const vegetables=[{id : 5,name:"carrot",calories:95},
+                {id : 6,name:"potatoes",calories:45},
+                {id : 7,name:"cabbage",calories:105},
+                {id : 8,name:"brocoli",calories:37}];
+
 
     return(
       <>
         <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
+        <List items={fruits} category="Fruits"/>
+        <List items={vegetables} category ="Vegetables"/>
         <UserGreeting isLoggedIn={true} username="anushka"/>
         <UserGreeting />
-        <List/>
         <Student name="ANUSHKA" age={10} isStudent={false}/>
         <Button/>
         
