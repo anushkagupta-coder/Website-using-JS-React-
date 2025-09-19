@@ -5,7 +5,7 @@
 //external
 //modules
 /*click event=an interaction when a user clicks a specific element 
-we can respond to clicks by passing a callback to onclick event handler 
+we can respond to clicks by passing a callback to onclick event handler */
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
