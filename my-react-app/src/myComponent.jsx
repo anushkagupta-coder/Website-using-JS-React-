@@ -2,11 +2,16 @@ import React, {useState}from 'react';
 
 function MyComponent(){
 
-    const [name, setName] = useState();
+    const [name, setName] = useState("ANUSHKA");
     const[age,setAge]=useState(0);
 
     const updateName=() => {
-        setName("hermoine")
+        setName("HERMOINE")
+    }
+
+    const incrementAge=()=>{
+        setAge(age+1);
+
     }
 
     return(<div>
