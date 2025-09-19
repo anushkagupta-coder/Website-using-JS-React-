@@ -2,7 +2,7 @@ function Button(){
 
     const handleClick=()=> console.log("OUCH!!!")
     return(
-        <button onClick={}>click me </button>
+        <button onClick={handleClick}>click me </button>
     );
 }
 export default Button
