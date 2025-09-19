@@ -10,12 +10,16 @@ import Card from './Card.jsx'
 import Button from './Button.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
+import List from './List.jsx'
+
 function App() {
     return(
       <>
         <Student name="HARRYPOTTER" age={21} isStudent={true}/>
         <Card/>
-        <UserGreeting isLoggedIn={false} username="ANUSHKA"/>
+        <UserGreeting isLoggedIn={true} username="anushka"/>
+        <UserGreeting />
+        <List/>
         <Student name="ANUSHKA" age={10} isStudent={false}/>
         <Button/>
         
