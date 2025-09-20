@@ -1,9 +1,9 @@
-.counetr-container{
+.counter-container{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 
 }
-.count-display{
+.counter-display{
   font-size: 10em;
   margin-top:0 
   margin-bottom:50px;
