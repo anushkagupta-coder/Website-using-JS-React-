@@ -5,6 +5,7 @@ function MyComponent(){
     const [name,setName]=useState("");
     const[quantity,setQuantity]=useState(); 
     const [comment,setComment]=useState("");
+    const [payment,setPayment]=useState("");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -18,15 +19,27 @@ function MyComponent(){
         setComment(event.target.value);
     }
 
+    function handlePaymentChange(event){
+        setPaymen(event.target.value);
+    }
+
     return(<div>
         <input value={name} onChange={handleNameChange}/>
         <p>ENTER UR NAME: {name}</p>
 
         <input value={quantity} onChange={handleQuantityChange} type="number"/>
         <p>Quantity: {quantity}</p>
+
         <textarea value={comment} onChange={handleCommentChange}
         placeholder="enter delivery instructions"/>
         <p>comment:{comment}</p>
+
+        <select value={payment} onChange={handlePaymentChange}>
+            <option value="">select an option </option>
+            <option value="visa">visa </option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
     </div>)
 }
 /*function MyComponent(){
