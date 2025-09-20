@@ -13,7 +13,13 @@ to use react features without writing class components  (react v16.8)
 to update its value in virtual DOM.[NAME,SETNAME]
 6.onChange== event handler used primiralily with from elements 
 ex: <input>,<textarea>,<ssleect >,<radiio>
-triggers a function every time the value of input chnages;*/
+triggers a function every time the value of input chnages;
+7.Upadter function==a func passed as an arg to setstate()ususally
+ex.setYear(arrow func)
+allow for safe updates based on previous state 
+used with multiple state updates and asynchronous functions
+good practice to use updater func
+*/
 
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
