@@ -2,16 +2,20 @@ import React, {useState}from 'react';
 
 function MyComponent(){
     const [cars,setCars]=useState([]);
-    const [carYear,seatCarYear]=useState(new Date().getFullYear());
+    const [carYear,setCarYear]=useState(new Date().getFullYear());
     const [carMake,setCarMake]=useState("");
     const [carModel,setCarModel]=useState("");
 
     function handleAddCar(){
-        const newcar={year: carYear ,
+        const newCar={year: carYear ,
                      make:carMake, 
                     model:carModel};
 
         setCars(c=>[...c,newCar]);
+
+        seatCarYear(new Date().getFullYear());
+        setCarMake("");
+        setCarModel("");
 
     }
 
@@ -19,7 +23,7 @@ function MyComponent(){
 
     }
     function handleYearChange(event){
-        seatCarYear(event.target.value);
+        setCarYear(event.target.value);
     }
 
     function handleMakeChange(){
@@ -34,14 +38,19 @@ function MyComponent(){
         <div>
             <h2>list of car objects</h2>
             <ul>
-
+                {cars.map((car,index)=>
+                
+                <li
+                    key={index}>
+                        {car.year} {car.make} {car.model}
+                </li>)}
             </ul>
 
             <input type="number" value={carYear} onChange={handleYearChange}/><br/>
-            <input type="text" value={carYear} onChange={handleMakeChange}
-                        placeholder="enetr car make"/><br/>
-            <input type="text" value={carYear} onChange={handleModelChange}
-                            placeholder='enetr car model'/><br/>
+            <input type="text" value={carMake} onChange={handleMakeChange}
+                        placeholder="ENTER CAR MAKE"/><br/>
+            <input type="text" value={carModel} onChange={handleModelChange}
+                            placeholder="ENTER CAR MODEL"/><br/>
             <button onClick={handleAddCar}>add car</button>
         </div>
     );
