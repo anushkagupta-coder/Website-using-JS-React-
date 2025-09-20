@@ -1,6 +1,56 @@
 import React, {useState}from 'react';
 
 function MyComponent(){
+    const [cars,setCars]=useState([]);
+    const [carYear,seatCarYear]=useState(new Date().getFullYear());
+    const [carMake,setCarMake]=useState("");
+    const [carModel,setCarModel]=useState("");
+
+    function handleAddCar(){
+        const newcar={year: carYear ,
+                     make:carMake, 
+                    model:carModel};
+
+        setCars(c=>[...c,newCar]);
+
+    }
+
+    function handleRemoveCar(index){
+
+    }
+    function handleYearChange(event){
+        seatCarYear(event.target.value);
+    }
+
+    function handleMakeChange(){
+        setCarMake(event.target.value);
+    }
+
+    function handleModelChange(){
+        setCarModel(event.target.value);
+    }
+
+    return(
+        <div>
+            <h2>list of car objects</h2>
+            <ul>
+
+            </ul>
+
+            <input type="number" value={carYear} onChange={handleYearChange}/><br/>
+            <input type="text" value={carYear} onChange={handleMakeChange}
+                        placeholder="enetr car make"/><br/>
+            <input type="text" value={carYear} onChange={handleModelChange}
+                            placeholder='enetr car model'/><br/>
+            <button onClick={handleAddCar}>add car</button>
+        </div>
+    );
+}
+
+
+
+
+/*function MyComponent(){
     const[car,setCar]=useState({year:2025,
                                 make:"bmw",
                                 model:"M5"});
@@ -24,7 +74,7 @@ function MyComponent(){
         <input type="text" value={car.make} onChange={handleMakeChange}/><br/>
         <input type="text" value={car.model} onChange={handleModelChange}/><br/>
     </div>)
-}
+}*/
 
 
 /*function MyComponent(){
@@ -89,6 +139,8 @@ function MyComponent(){
         <p>shipping:{shipping}</p>
     </div>)
 }*/
+
+
 
 /*function MyComponent(){
 
