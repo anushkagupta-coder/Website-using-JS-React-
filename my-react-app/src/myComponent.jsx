@@ -6,7 +6,7 @@ function MyComponent2(){
                                 model:"M5"});
 
     function handleYearChange(event){
-
+        setCar({...car, year: 2025});
     }
 
     function handleMakeChange(event){
@@ -21,8 +21,8 @@ function MyComponent2(){
         <p>Your fav car is:{car.year} {car.make} {car.model}</p>
 
         <input type="number" value={car.year} onChange={handleYearChange}/><br/>
-        <input type="text" value={car.make}/><br/>
-        <input type="text" value={car.model}/><br/>
+        <input type="text" value={car.make} onChange={handleMakeChange}/><br/>
+        <input type="text" value={car.model} onChange={handleModelChange}/><br/>
     </div>)
 }
 
