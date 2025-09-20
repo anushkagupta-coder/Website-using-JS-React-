@@ -6,6 +6,7 @@ function MyComponent(){
     const [quantity,setQuantity]=useState(); 
     const [comment,setComment]=useState("");
     const [payment,setPayment]=useState("");
+    const [shipping,setShipping]=useState("");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -21,6 +22,10 @@ function MyComponent(){
 
     function handlePaymentChange(event){
         setPayment(event.target.value);
+    }
+
+    function handleShipiingChange(event){
+        setShipping(event.target.value);
     }
 
     return(<div>
@@ -40,7 +45,22 @@ function MyComponent(){
             <option value="mastercard">mastercard</option>
             <option value="giftcard">giftcard</option>
         </select>
-        <p>payment:{payment}</p>
+        <p>Payment:{payment}</p>
+
+        <label>
+            <input type="radio" value="pick up"
+                checked={shipping ==="pick up"}
+                onChange={handleShipiingChange}/>
+            pick up 
+        </label><br/>
+
+        <label>
+            <input type="radio" value="delivery"
+                checked={shipping ==="delivery"}
+                onChange={handleShipiingChange}/>
+            delivery 
+        </label>
+        <p>shipping:{shipping}</p>
     </div>)
 }
 /*function MyComponent(){
