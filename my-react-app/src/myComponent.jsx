@@ -1,7 +1,33 @@
 import React, {useState}from 'react';
 
+function MyComponent2(){
+    const[car,setCar]=useState({year:2025,
+                                make:"bmw",
+                                model:"M5"});
 
-function MyComponent(){
+    function handleYearChange(event){
+
+    }
+
+    function handleMakeChange(event){
+
+    }
+
+    function handleModelChange(event){
+
+    }
+
+    return(<div>
+        <p>Your fav car is:{car.year} {car.make} {car.model}</p>
+
+        <input type="number" value={car.year} onChange={handleYearChange}/><br/>
+        <input type="text" value={car.make}/><br/>
+        <input type="text" value={car.model}/><br/>
+    </div>)
+}
+
+
+/*function MyComponent(){
     const [name,setName]=useState("");
     const [quantity,setQuantity]=useState(); 
     const [comment,setComment]=useState("");
@@ -62,7 +88,8 @@ function MyComponent(){
         </label>
         <p>shipping:{shipping}</p>
     </div>)
-}
+}*/
+
 /*function MyComponent(){
 
     const [name, setName] = useState("ANUSHKA");
