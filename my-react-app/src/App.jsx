@@ -10,7 +10,11 @@ we can respond to clicks by passing a callback to onclick event handler
 to use react features without writing class components  (react v16.8)
 (useState,useEffect,useContext,useReducer,useCallback)
 5.useState() = A react hook that allowsthe creation of a staeful variable and a steer funtion
-to update its value in virtual DOM.[NAME,SETNAME]*/
+to update its value in virtual DOM.[NAME,SETNAME]
+6.onChange== event handler used primiralily with from elements 
+ex: <input>,<textarea>,<ssleect >,<radiio>
+triggers a function every time the value of input chnages;*/
+
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'

@@ -5,8 +5,8 @@
 }
 .counter-display{
   font-size: 10em;
-  margin-top:0 
-  margin-bottom:50px;
+  margin-top:0 ;
+  margin-bottom: 50px;
 }
 .counter-button{
   width:150px;
@@ -14,7 +14,7 @@
   font-size: 1.5em;
   font-weight: bold;
   margin: 0px 5px;
-  background-color: aqua;
+  background-color: green;
   color: white;
   border: none;
   border-radius:5px;

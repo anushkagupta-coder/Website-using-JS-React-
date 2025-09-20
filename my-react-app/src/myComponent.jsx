@@ -1,6 +1,19 @@
 import React, {useState}from 'react';
 
+
 function MyComponent(){
+    const [name,setName]=useState("");
+
+    function handleNameChange(event){
+        setName(event.target.value);
+    }
+
+    return(<div>
+        <input value={name} onChange={handleNameChange}/>
+        <p>ENTER UR NAME: {name}</p>
+    </div>)
+}
+/*function MyComponent(){
 
     const [name, setName] = useState("ANUSHKA");
     const[age,setAge]=useState(0);
@@ -30,5 +43,5 @@ function MyComponent(){
         <button onClick={toggleEmployedStatus}>toggle status</button>
     </div>)
 
-}
+}*/
 export default MyComponent
