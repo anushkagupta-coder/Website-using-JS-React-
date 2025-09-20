@@ -1,20 +1,20 @@
 import React, {useState}from 'react';
 
-function MyComponent2(){
+function MyComponent(){
     const[car,setCar]=useState({year:2025,
                                 make:"bmw",
                                 model:"M5"});
 
     function handleYearChange(event){
-        setCar({...car, year: event.target.value});
+        setCar(c => ({...c, year: event.target.value}));
     }
 
     function handleMakeChange(event){
-
+        setCar(c=>({...car,make:event.target.value}));
     }
 
     function handleModelChange(event){
-
+        setCar(c=>({...car,model:event.target.value}));
     }
 
     return(<div>
