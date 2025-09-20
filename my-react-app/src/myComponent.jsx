@@ -3,7 +3,7 @@ import React, {useState}from 'react';
 
 function MyComponent(){
     const [name,setName]=useState("");
-    const[quantity,setQuantity]=useState(); 
+    const [quantity,setQuantity]=useState(); 
     const [comment,setComment]=useState("");
     const [payment,setPayment]=useState("");
 
@@ -20,7 +20,7 @@ function MyComponent(){
     }
 
     function handlePaymentChange(event){
-        setPaymen(event.target.value);
+        setPayment(event.target.value);
     }
 
     return(<div>
@@ -40,6 +40,7 @@ function MyComponent(){
             <option value="mastercard">mastercard</option>
             <option value="giftcard">giftcard</option>
         </select>
+        <p>payment:{payment}</p>
     </div>)
 }
 /*function MyComponent(){
