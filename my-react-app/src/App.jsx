@@ -36,7 +36,7 @@ good practice to use updater func
     1.useEffect(()=>{})    runs afetr every rereneder
     2.useEffect(()=>{},[]) runs only on mount
     3.useEffect(()=>{},[value]) uns on mount +when value chanegs  
-    
+
     */
 
 import Header from './Header.jsx'
@@ -72,6 +72,7 @@ function App() {
         <Footer/>
         <Counter/>
         <MyComponent/>
+        <MyComponent2/>
         <List items={fruits} category="Fruits"/>
         <List items={vegetables} category ="Vegetables"/>
         <UserGreeting isLoggedIn={true} username="anushka"/>

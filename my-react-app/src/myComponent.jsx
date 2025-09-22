@@ -24,7 +24,7 @@ function MyComponent(){
 
 
 
-/*function MyComponent(){
+function MyComponent2(){
     const [cars,setCars]=useState([]);
     const [carYear,setCarYear]=useState(new Date().getFullYear());
     const [carMake,setCarMake]=useState("");
@@ -80,7 +80,7 @@ function MyComponent(){
     );
 }
 
-*/
+
 
 
 /*function MyComponent(){
