@@ -18,7 +18,9 @@ function digitalClock(){
         let hours=time.getHours();
         const minutes=time.getMinutes();
         const seconds=time.getSeconds();
-        const meridiem =hours >=12
+        const meridiem =hours >=12 ? "pm": "am";
+
+        hours = hours % 12
     }
 
     return(<>
