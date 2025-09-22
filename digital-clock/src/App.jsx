@@ -1,13 +1,14 @@
 
-import digitalClock from './digitalClock.jsx'
+import DigitalClock from './DigitalClock.jsx'
 function App() {
   
   return (
     <>
       
-    <digitalClock/>
+    <DigitalClock/>
     </>
   )
 }
+
 
 export default App

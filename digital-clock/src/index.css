@@ -1,5 +1,5 @@
 body{
-  background-image: url(assests/react.svg);
+  background-image: url(assets/react.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,13 +11,13 @@ body{
   align-items: center;
 }
 .clock-container{
-  backdrop-filter: blur(5px);
   width:100vw;
   padding: 10px 0;
+
   
 }
 .clock{
-  color: white;
+  color: black;
   font-size: 6rem;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

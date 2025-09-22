@@ -1,6 +1,6 @@
-import React,{useStae,useEffect} from 'react';
+import React,{useState,useEffect} from 'react';
 
-function digitalClock(){
+function DigitalClock(){
 
     const [time,setTime] = useState(new Date());
     useEffect(()=>{
@@ -24,8 +24,8 @@ function digitalClock(){
 
         return ` ${padZero(hours)} : ${padZero(minutes)} :${padZero(seconds)} ${meridiem}`;
         function padZero(number){
-                return (number <10 ? "0" : "")
-                
+                return (number <10 ? "0" : "") +number;
+
         }
     }
 
@@ -40,4 +40,4 @@ function digitalClock(){
 }
 
 
-export default digitalClock
+export default DigitalClock
