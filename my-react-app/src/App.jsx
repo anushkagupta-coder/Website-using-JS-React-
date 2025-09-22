@@ -1,25 +1,43 @@
 /*1.protypes=a mechanism that ensures 
  that passed value is of correct data type
-2.css styles
+
+ 2.css styles
 inline 
 external
 modules
+
 3.click event=an interaction when a user clicks a specific element 
 we can respond to clicks by passing a callback to onclick event handler
+
 4.React hook=special function that allows functional components
 to use react features without writing class components  (react v16.8)
 (useState,useEffect,useContext,useReducer,useCallback)
+
 5.useState() = A react hook that allowsthe creation of a staeful variable and a steer funtion
 to update its value in virtual DOM.[NAME,SETNAME]
+
 6.onChange== event handler used primiralily with from elements 
 ex: <input>,<textarea>,<ssleect >,<radiio>
 triggers a function every time the value of input chnages;
+
 7.Upadter function==a func passed as an arg to setstate()ususally
 ex.setYear(arrow func)
 allow for safe updates based on previous state 
 used with multiple state updates and asynchronous functions
 good practice to use updater func
-*/
+
+8.useEffect() == react hook that tells react to do some code when
+    this componentrereders 
+    this component mounts 
+    the state of  a value
+    
+    useEffect(function,[dependenceis])
+
+    1.useEffect(()=>{})    runs afetr every rereneder
+    2.useEffect(()=>{},[]) runs only on mount
+    3.useEffect(()=>{},[value]) uns on mount +when value chanegs  
+    
+    */
 
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
