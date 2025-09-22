@@ -4,12 +4,12 @@ import React, {useState , useEffect}from 'react';
 function MyComponent(){
 
     const [count,setCount]=useState(0);
-    const [color,setColor]=setState("green");
+    const [color,setColor]=useState("green");
 
     useEffect(()=> {
-        document.title=`Count: ${count};`
+        document.title=`Count: ${count} ${color}`;
 
-    }, []);
+    },);
 // [] uper ka change hoga just once  
 //[value] uper bhi chnage hoga everytime the value chanegs or u press count
 
