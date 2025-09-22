@@ -1,8 +1,11 @@
-import React,{useStae,useEffect} from `react`;
+import React,{useStae,useEffect} from 'react';
 
 function digitalClock(){
 
+    const [time,setTime] = useState(new Date());
+    useEffect(()=>{
 
+    },[]);
 
     return(<>
         <div className ="clock-container">

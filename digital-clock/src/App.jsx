@@ -1,5 +1,5 @@
 
-import digitalClock from `./digitalClock.jsx`
+import digitalClock from './digitalClock.jsx'
 function App() {
   
   return (
