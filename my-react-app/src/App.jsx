@@ -74,10 +74,11 @@ function App() {
         <Button/>
         <Footer/>
         <Counter/>
-        <MyComponent/>
-        <MyComponent2/>
         <MyComponent3/>
         <MyComponent4/>
+        <MyComponent/>
+        <MyComponent2/>
+        
         <List items={fruits} category="Fruits"/>
         <List items={vegetables} category ="Vegetables"/>
         <UserGreeting isLoggedIn={true} username="anushka"/>
