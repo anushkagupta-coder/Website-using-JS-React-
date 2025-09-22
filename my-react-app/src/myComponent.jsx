@@ -9,6 +9,11 @@ function MyComponent(){
     useEffect(()=> {
         document.title=`Count: ${count} ${color}`;
 
+        return ()=>{
+            //some cleanup code
+            
+        }
+
     },);
 // [] uper ka change hoga just once  
 //[value] uper bhi chnage hoga everytime the value chanegs or u press count
